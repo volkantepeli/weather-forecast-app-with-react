@@ -16,11 +16,11 @@ function Days() {
         getData();
       }, [city, setWeather]);
       return (
-        <div>
+        <div className="days">
           {weather.map((item, i) => {
             return ( 
-                <div key={i}> 
-                    <div >
+                <div className="day" key={i}> 
+                    <div className="day-title" >
                       {days[
                         new Date(item.dt * 1000).getDay()
                       ]}
@@ -31,7 +31,7 @@ function Days() {
                       alt={item.weather[0].description.toUpperCase()}
                       title={item.weather[0].description.toUpperCase()}
                     /> 
-                    <div > 
+                    <div div className="day-deg" > 
                         <span className="tmp-high">
                         {Math.round(item.temp['max'] - 273.15)}
                         &deg;

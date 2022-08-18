@@ -13,7 +13,7 @@ function Header() {
   };
 
   return (
-    <div>
+    <div className="select-box">
       <select
         name="cities"
         id="cities"
