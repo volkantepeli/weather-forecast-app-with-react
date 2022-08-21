@@ -6,7 +6,7 @@ React.js & ContextApi; I developed with. A minimally designed application where 
 
 
 
-## Requirements && for installation
+## Requirements
 ```
 git clone https://github.com/volkantepeli/weather-forecast-app-with-react.git
 ```
